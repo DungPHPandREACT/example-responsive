@@ -1,0 +1,47 @@
+.box {
+  width: 30%;
+  height: 200px;
+}
+
+.box.box-red {
+  background: red;
+}
+
+.box.box-blue {
+  background: blue;
+}
+
+.box.box-yellow {
+  background: yellow;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) and (min-width: 576px) {
+  .box {
+    width: 40%;
+  }
+
+  .box:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .box {
+    width: 70%;
+    margin: 20px 0px;
+  }
+
+  .box {
+    margin: 20px 0px;
+  }
+
+  .box.box-blue {
+    order: 1;
+  }
+}
